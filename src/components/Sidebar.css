@@ -1,0 +1,57 @@
+.sidebar {
+  background-color: #1e1e1e;
+  color: white;
+  width: 250px;
+  min-height: 100vh;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.sidebar-profile {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #6c63ff;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-username {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.sidebar-inventory {
+  margin-top: 20px;
+}
+
+.sidebar-inventory h4 {
+  font-size: 14px;
+  color: #bbb;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #333;
+  padding-bottom: 4px;
+}
+
+.sidebar-inventory ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-inventory li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #ddd;
+}

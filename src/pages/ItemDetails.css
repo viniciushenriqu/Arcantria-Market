@@ -1,0 +1,16 @@
+.item-details-container {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.item-details-container button {
+  background-color: #6c63ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 20px;
+  cursor: pointer;
+}

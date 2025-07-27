@@ -1,0 +1,45 @@
+.topbar {
+  background-color: #1e1e1e;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 250px; /* compensação da sidebar */
+  right: 0;
+  z-index: 10;
+  color: white;
+}
+
+.topbar-left {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.balance {
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.logout-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
