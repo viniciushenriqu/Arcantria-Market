@@ -4,10 +4,12 @@ import Topbar from '../components/Topbar';
 import './Profile.css';
 
 const inventario = [
-  { id: 1, nome: 'Espada Lendária', tipo: 'Arma' },
-  { id: 2, nome: 'Armadura de Fogo', tipo: 'Defesa' },
-  { id: 3, nome: 'Poção de Mana x3', tipo: 'Consumível' },
-  { id: 4, nome: 'Anel Mágico', tipo: 'Acessório' },
+  { id: 1, nome: 'Espada Lendária', icone: '🗡️' },
+  { id: 2, nome: 'Armadura de Fogo', icone: '🛡️' },
+  { id: 3, nome: 'Poção de Mana x3', icone: '🧪' },
+  { id: 4, nome: 'Anel Mágico', icone: '💍' },
+  { id: 5, nome: 'Botas Velozes', icone: '👢' },
+  { id: 6, nome: 'Livro Arcano', icone: '📘' },
 ];
 
 function Profile() {
@@ -16,13 +18,12 @@ function Profile() {
       <Sidebar />
       <Topbar />
       <div className="profile-content">
-        <h2>Meu Inventário</h2>
+        <h1>Meu Inventário</h1>
         <div className="inventory-grid">
           {inventario.map((item) => (
             <div key={item.id} className="inventory-card">
-              <span className="item-icon">🎒</span>
-              <h3>{item.nome}</h3>
-              <p>{item.tipo}</p>
+              <div className="item-icon">{item.icone}</div>
+              <div className="item-name">{item.nome}</div>
             </div>
           ))}
         </div>
