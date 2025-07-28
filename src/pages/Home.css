@@ -1,22 +1,63 @@
-.home-buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  margin-top: 2rem;
-  max-width: 300px;
+.home-content {
+  margin-left: 250px;     /* compensação da sidebar */
+  margin-top: 60px;       /* compensação da topbar */
+  padding: 2rem;
+  background-color: #121212;
+  min-height: 100vh;
+  color: white;
 }
 
-.home-btn {
+.home-content h1 {
+  margin-bottom: 10px;
+}
+
+.home-content p {
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+.home-buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 280px);
+  gap: 30px;
+
+  width: 600px;           /* controla largura total dos botões */
+  margin-left: auto;      /* empurra a grade para a direita */
+  margin-right: 12rem;     /* distância da borda direita */
+  margin-top: 3rem;
+}
+
+.home-box-btn {
   background-color: #6c63ff;
   color: white;
-  padding: 12px;
   text-align: center;
-  border-radius: 8px;
-  text-decoration: none;
+  padding: 50px 30px;
+  border-radius: 12px;
   font-weight: bold;
+  text-decoration: none;
+  font-size: 18px;
   transition: background-color 0.3s ease;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.home-btn:hover {
+.home-box-btn:hover {
   background-color: #574fd6;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  .home-buttons-grid {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .home-box-btn {
+    width: 90%;
+    margin: 0 auto;
+  }
 }

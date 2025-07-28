@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Topbar from '../components/Topbar';
-import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
@@ -10,14 +10,27 @@ function Home() {
       <Sidebar />
       <Topbar />
       <div className="home-content">
-        <h1>Bem-vindo ao ArcantriaMarket</h1>
-        <p>Acesse rapidamente as funcionalidades principais:</p>
+        
+        <div className="home-buttons-grid">
+          <Link to="/marketplace" className="home-box-btn">
+            <span role="img" aria-label="Marketplace">🛒</span><br />
+            Marketplace
+          </Link>
 
-        <div className="home-buttons">
-          <Link to="/marketplace" className="home-btn">🛒 Acessar Marketplace</Link>
-          <Link to="/profile" className="home-btn">🎒 Ver Inventário</Link>
-          <Link to="/buy-crypto" className="home-btn">💰 Comprar Moedas</Link>
-          <Link to="/withdraw" className="home-btn">📤 Sacar Moedas</Link>
+          <Link to="/profile" className="home-box-btn">
+            <span role="img" aria-label="Inventário">🎒</span><br />
+            Inventário
+          </Link>
+
+          <Link to="/buy-crypto" className="home-box-btn">
+            <span role="img" aria-label="Comprar Moedas">💰</span><br />
+            Comprar Moedas
+          </Link>
+
+          <Link to="/withdraw" className="home-box-btn">
+            <span role="img" aria-label="Sacar">📤</span><br />
+            Sacar
+          </Link>
         </div>
       </div>
     </>
